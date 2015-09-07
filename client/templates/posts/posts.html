@@ -1,9 +1,10 @@
 <template name="posts">
-	<!-- Button trigger modal -->
-	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#postModal">
-	  Tweet
-	</button>
-
+	{{#if currentUser}}
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#postModal">
+		  Tweet
+		</button>
+	{{/if}}
 	<!-- Modal -->
 	<div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="postModalLabel">
 	  <div class="modal-dialog" role="document">
