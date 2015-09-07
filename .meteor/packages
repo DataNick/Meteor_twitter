@@ -14,3 +14,5 @@ accounts-password
 joshowens:accounts-entry
 cfs:standard-packages
 cfs:gridfs
+aldeed:collection2
+aldeed:autoform
