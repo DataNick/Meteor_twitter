@@ -5,3 +5,9 @@ Template.posts.helpers({
     return Posts.find({}, {sort:{createdAt: -1}});
   }
 });
+
+Template.posts.events({
+  "click .remove": function(){
+    Posts.remove(this._id);
+  }
+});
